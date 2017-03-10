@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>分页</title>
+    <link rel="stylesheet" href="css/pagination.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/bobo-pagination.js"></script>
+    <script>
+    $(function() {
+        $('#pagination').pagination({
+            total: 105,
+            pageSize: 10,
+            pageNum: 5, // 展示页码个数，默认显示5个
+            firstText: '第一页', // 首页按钮文本内容,为空，则不显示
+            lastText: '最后一页', // 末页按钮文本内容,为空，则不显示
+            prevText: '上一页呀', // 上一页按钮文本内容,为空，则不显示
+            nextText: '下一页呀', // 下一页按钮文本内容,为空，则不显示
+            showTotal: true,
+            linkTo: 'javascript:;'
+
+        });
+    })
+    </script>
+</head>
+
+<body>
+    <div id="pagination" class="pagination clearfix">
+    </div>
+</body>
+
+</html>
